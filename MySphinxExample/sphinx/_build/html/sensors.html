@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sensors module &#8212; My Sphinx Example Project 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sphinx_example module" href="sphinx_example.html" />
+    <link rel="prev" title="src" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sensors">
+<span id="sensors-module"></span><h1>sensors module<a class="headerlink" href="#module-sensors" title="Permalink to this headline">¶</a></h1>
+<p>Defines the sensor classes.</p>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Defines the base and end user classes for various sensors.</p>
+<ul class="simple">
+<li><p>Sensor (base class)</p></li>
+<li><p>TempSensor</p></li>
+</ul>
+</div>
+<div class="section" id="libraries-modules">
+<h2>Libraries/Modules<a class="headerlink" href="#libraries-modules" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>random standard library (<a class="reference external" href="https://docs.python.org/3/library/random.html">https://docs.python.org/3/library/random.html</a>)</dt><dd><ul>
+<li><p>Access to randint function.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Comments are Sphinx (reStructuredText) compatible.</p></li>
+</ul>
+</div>
+<div class="section" id="todo">
+<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>None.</p></li>
+</ul>
+</div>
+<div class="section" id="author-s">
+<h2>Author(s)<a class="headerlink" href="#author-s" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Created by John Woolsey on 05/27/2020.</p></li>
+<li><p>Modified by John Woolsey on 07/02/2020.</p></li>
+</ul>
+<p>Copyright (c) 2020 Woolsey Workshop.  All rights reserved.</p>
+</div>
+<div class="section" id="members">
+<h2>Members<a class="headerlink" href="#members" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="sensors.Sensor">
+<em class="property">class </em><code class="sig-name descname">Sensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The sensor base class.</p>
+<p>Defines the base class utilized by all sensors.</p>
+<dl class="py method">
+<dt id="sensors.Sensor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Sensor base class initializer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – The name of the sensor.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An instance of the Sensor class initialized with the specified name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sensors.Sensor.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the sensor’s description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A description of the sensor.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="sensors.Sensor.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#sensors.Sensor.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the sensor.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="sensors.Sensor.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#sensors.Sensor.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of the sensor.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="sensors.TempSensor">
+<em class="property">class </em><code class="sig-name descname">TempSensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">unit</span><span class="o">=</span><span class="default_value">'F'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sensors.Sensor" title="sensors.Sensor"><code class="xref py py-class docutils literal notranslate"><span class="pre">sensors.Sensor</span></code></a></p>
+<p>The temperature sensor class.</p>
+<p>Provides access to the connected temperature sensor.</p>
+<p>Supported units are “F” (Fahrenheit), “C” (Celsius), and “K” (Kelvin)
+with “F” being the default unit.</p>
+<dl class="py method">
+<dt id="sensors.TempSensor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">unit</span><span class="o">=</span><span class="default_value">'F'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>The TempSensor class initializer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – The name of the temperature sensor.</p></li>
+<li><p><strong>unit</strong> – The unit of the temperature sensor, defaults to “F”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An instance of the TempSensor class initialized with the specified name and unit.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sensors.TempSensor.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the temperature sensor’s description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A description of the temperature sensor.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sensors.TempSensor.set_unit">
+<code class="sig-name descname">set_unit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">unit</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.set_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the temperature unit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>unit</strong> – The temperature unit (“F”, “C”, or “K”),
+defaults to “F” if a valid unit is not provided.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="sensors.TempSensor.unit">
+<code class="sig-name descname">unit</code><a class="headerlink" href="#sensors.TempSensor.unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>The temperature unit.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">My Sphinx Example Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">sensors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_example.html">sphinx_example module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">src</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">src</a></li>
+      <li>Next: <a href="sphinx_example.html" title="next chapter">sphinx_example module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Woolsey Workshop.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/sensors.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
