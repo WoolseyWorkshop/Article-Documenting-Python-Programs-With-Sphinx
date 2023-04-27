@@ -5,14 +5,14 @@ Description
 
 Defines the base and end user classes for various sensors.
 
-- Sensor (base class)
-- TempSensor
+- *Sensor* - The base sensor class.
+- *TempSensor* - The temperature sensor class.
 
 Libraries/Modules
 -----------------
 
-- random standard library (https://docs.python.org/3/library/random.html)
-    - Access to randint function.
+- *random* Standard Library (https://docs.python.org/3/library/random.html)
+    - Provides access to the *randint* function.
 
 Notes
 -----
@@ -28,7 +28,7 @@ Author(s)
 ---------
 
 - Created by John Woolsey on 05/27/2020.
-- Modified by John Woolsey on 07/02/2020.
+- Modified by John Woolsey on 04/21/2023.
 
 Copyright (c) 2020 Woolsey Workshop.  All rights reserved.
 
@@ -46,23 +46,23 @@ class Sensor:
     Defines the base class utilized by all sensors.
     """
 
-    def __init__(self, name):
+    def __init__(self, name: str) -> None:
         """The Sensor base class initializer.
 
         :param name: The name of the sensor.
-
-        :return: An instance of the Sensor class initialized with the specified name.
+        :type name:  str
         """
 
-        self.name = name
+        self.name: str = name
         """The name of the sensor."""
-        self.value = random.randint(0, 50)
+        self.value: int = random.randint(0, 50)
         """The value of the sensor."""
 
-    def __str__(self):
+    def __str__(self) -> str:
         """Retrieves the sensor's description.
 
         :return: A description of the sensor.
+        :rtype:  str
         """
 
         return f"The {self.name} sensor has a value of {self.value}."
@@ -73,24 +73,24 @@ class TempSensor(Sensor):
 
     Provides access to the connected temperature sensor.
 
-    Supported units are "F" (Fahrenheit), "C" (Celsius), and "K" (Kelvin)
-    with "F" being the default unit.
+    Supported units are `"F"` (Fahrenheit), `"C"` (Celsius), and `"K"` (Kelvin).
     """
 
-    def __init__(self, name, unit="F"):
+    def __init__(self, name, unit="F") -> None:
         """The TempSensor class initializer.
 
         :param name: The name of the temperature sensor.
-        :param unit: The unit of the temperature sensor, defaults to "F".
-
-        :return: An instance of the TempSensor class initialized with the specified name and unit.
+        :type name:  str
+        :param unit: The unit of the temperature sensor with values of
+            `"F"`, `"C"`, or `"K"`; defaults to `"F"`.
+        :type unit:  str
         """
 
         super().__init__(name)
-        self.unit = unit
+        self.unit: str = unit
         """The temperature unit."""
 
-    def __str__(self):
+    def __str__(self) -> str:
         """Retrieves the temperature sensor's description.
 
         :return: A description of the temperature sensor.
@@ -100,15 +100,3 @@ class TempSensor(Sensor):
             f"The {self.name} temperature sensor has a value of "
             f"{self.value} degrees {self.unit}."
         )
-
-    def set_unit(self, unit):
-        """Sets the temperature unit.
-
-        :param unit: The temperature unit ("F", "C", or "K"),
-            defaults to "F" if a valid unit is not provided.
-        """
-
-        if unit in ("C", "K"):
-            self.unit = unit
-        else:
-            self.unit = "F"

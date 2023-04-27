@@ -1,18 +1,17 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>sensors module &#8212; My Sphinx Example Project 1.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="sphinx_example module" href="sphinx_example.html" />
@@ -33,154 +32,139 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-sensors">
-<span id="sensors-module"></span><h1>sensors module<a class="headerlink" href="#module-sensors" title="Permalink to this headline">¶</a></h1>
+  <section id="module-sensors">
+<span id="sensors-module"></span><h1>sensors module<a class="headerlink" href="#module-sensors" title="Permalink to this heading">¶</a></h1>
 <p>Defines the sensor classes.</p>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
 <p>Defines the base and end user classes for various sensors.</p>
 <ul class="simple">
-<li><p>Sensor (base class)</p></li>
-<li><p>TempSensor</p></li>
+<li><p><em>Sensor</em> - The base sensor class.</p></li>
+<li><p><em>TempSensor</em> - The temperature sensor class.</p></li>
 </ul>
-</div>
-<div class="section" id="libraries-modules">
-<h2>Libraries/Modules<a class="headerlink" href="#libraries-modules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="libraries-modules">
+<h2>Libraries/Modules<a class="headerlink" href="#libraries-modules" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><dl class="simple">
-<dt>random standard library (<a class="reference external" href="https://docs.python.org/3/library/random.html">https://docs.python.org/3/library/random.html</a>)</dt><dd><ul>
-<li><p>Access to randint function.</p></li>
+<dt><em>random</em> Standard Library (<a class="reference external" href="https://docs.python.org/3/library/random.html">https://docs.python.org/3/library/random.html</a>)</dt><dd><ul>
+<li><p>Provides access to the <em>randint</em> function.</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Comments are Sphinx (reStructuredText) compatible.</p></li>
 </ul>
-</div>
-<div class="section" id="todo">
-<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="todo">
+<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>None.</p></li>
 </ul>
-</div>
-<div class="section" id="author-s">
-<h2>Author(s)<a class="headerlink" href="#author-s" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="author-s">
+<h2>Author(s)<a class="headerlink" href="#author-s" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Created by John Woolsey on 05/27/2020.</p></li>
-<li><p>Modified by John Woolsey on 07/02/2020.</p></li>
+<li><p>Modified by John Woolsey on 04/21/2023.</p></li>
 </ul>
 <p>Copyright (c) 2020 Woolsey Workshop.  All rights reserved.</p>
-</div>
-<div class="section" id="members">
-<h2>Members<a class="headerlink" href="#members" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="members">
+<h2>Members<a class="headerlink" href="#members" title="Permalink to this heading">¶</a></h2>
+</section>
 <dl class="py class">
-<dt id="sensors.Sensor">
-<em class="property">class </em><code class="sig-name descname">Sensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.Sensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Sensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>The sensor base class.</p>
 <p>Defines the base class utilized by all sensors.</p>
 <dl class="py method">
-<dt id="sensors.Sensor.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.Sensor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#sensors.Sensor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>The Sensor base class initializer.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> – The name of the sensor.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>An instance of the Sensor class initialized with the specified name.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – The name of the sensor.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sensors.Sensor.__str__">
-<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensors.Sensor.__str__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.Sensor.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#sensors.Sensor.__str__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the sensor’s description.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A description of the sensor.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="sensors.Sensor.name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#sensors.Sensor.name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.Sensor.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#sensors.Sensor.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>The name of the sensor.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="sensors.Sensor.value">
-<code class="sig-name descname">value</code><a class="headerlink" href="#sensors.Sensor.value" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.Sensor.value">
+<span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#sensors.Sensor.value" title="Permalink to this definition">¶</a></dt>
 <dd><p>The value of the sensor.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="sensors.TempSensor">
-<em class="property">class </em><code class="sig-name descname">TempSensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">unit</span><span class="o">=</span><span class="default_value">'F'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#sensors.Sensor" title="sensors.Sensor"><code class="xref py py-class docutils literal notranslate"><span class="pre">sensors.Sensor</span></code></a></p>
+<dt class="sig sig-object py" id="sensors.TempSensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TempSensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'F'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sensors.Sensor" title="sensors.Sensor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sensor</span></code></a></p>
 <p>The temperature sensor class.</p>
 <p>Provides access to the connected temperature sensor.</p>
-<p>Supported units are “F” (Fahrenheit), “C” (Celsius), and “K” (Kelvin)
-with “F” being the default unit.</p>
+<p>Supported units are <cite>“F”</cite> (Fahrenheit), <cite>“C”</cite> (Celsius), and <cite>“K”</cite> (Kelvin).</p>
 <dl class="py method">
-<dt id="sensors.TempSensor.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">unit</span><span class="o">=</span><span class="default_value">'F'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.TempSensor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'F'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#sensors.TempSensor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>The TempSensor class initializer.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> – The name of the temperature sensor.</p></li>
-<li><p><strong>unit</strong> – The unit of the temperature sensor, defaults to “F”.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the temperature sensor.</p></li>
+<li><p><strong>unit</strong> (<em>str</em>) – The unit of the temperature sensor with values of
+<cite>“F”</cite>, <cite>“C”</cite>, or <cite>“K”</cite>; defaults to <cite>“F”</cite>.</p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>An instance of the TempSensor class initialized with the specified name and unit.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sensors.TempSensor.__str__">
-<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.__str__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.TempSensor.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#sensors.TempSensor.__str__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the temperature sensor’s description.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A description of the temperature sensor.</p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt id="sensors.TempSensor.set_unit">
-<code class="sig-name descname">set_unit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">unit</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensors.TempSensor.set_unit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the temperature unit.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>unit</strong> – The temperature unit (“F”, “C”, or “K”),
-defaults to “F” if a valid unit is not provided.</p>
-</dd>
-</dl>
-</dd></dl>
-
 <dl class="py attribute">
-<dt id="sensors.TempSensor.unit">
-<code class="sig-name descname">unit</code><a class="headerlink" href="#sensors.TempSensor.unit" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sensors.TempSensor.unit">
+<span class="sig-name descname"><span class="pre">unit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#sensors.TempSensor.unit" title="Permalink to this definition">¶</a></dt>
 <dd><p>The temperature unit.</p>
 </dd></dl>
 
 </dd></dl>
 
-</div>
-</div>
+</section>
 
 
           </div>
@@ -199,7 +183,7 @@ defaults to “F” if a valid unit is not provided.</p>
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">sensors module</a></li>
@@ -223,12 +207,12 @@ defaults to “F” if a valid unit is not provided.</p>
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -245,8 +229,8 @@ defaults to “F” if a valid unit is not provided.</p>
       &copy;2020, Woolsey Workshop.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
       <a href="_sources/sensors.rst.txt"
